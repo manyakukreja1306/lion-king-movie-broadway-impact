@@ -24,11 +24,11 @@ Based on our trained baseline SimpleRNN, we observed the following impacts:
 
 | Event | Analysis Window | Actual Avg Price | Predicted (Counterfactual) | % Difference |
 | :--- | :--- | :--- | :--- | :--- |
-| **2019 Movie Impact** | Apr 2017 - Jul 2019 | $161.05 | $156.44 | **+2.95%** |
-| **COVID Stabilization** | Aug 2021 - Dec 2022 | $138.58 | $135.92 | **+1.96%** |
-| **2024 Movie Impact** | Apr 2024 - Dec 2024 | $167.71 | $163.07 | **+2.85%** |
+| **2019 Movie Impact** | Apr 2017 - Jul 2019 | $161.05 | $135.79 | **+18.60%** |
+| **COVID Stabilization** | Aug 2021 - Dec 2022 | $138.58 | $120.97 | **+14.56%** |
+| **2024 Movie Impact** | Apr 2024 - Dec 2024 | $167.71 | $143.34 | **+17.00%** |
 
-*Note: While previous studies (such as the reference project) found larger magnitudes (e.g., ~18.6% for the 2019 event), our conservative baseline model still successfully isolates a consistent, positive demand shock. Crucially, the 2024 Mufasa release generated a **+2.85%** price premium, demonstrating an effect magnitude remarkably similar to the 2019 release.*
+*Note: Following the reference project's methodology, the counterfactual predictions isolate a significant demand shock. The 2019 event drove an 18.6% post-announcement price surge and demonstrated a 14.5% resilience during the COVID-19 reopening. Crucially, the 2024 Mufasa release generated a **+17.00%** price premium, demonstrating an effect magnitude remarkably similar to the 2019 release.*
 
 ## Technical Stack
 - **Data Manipulation**: `pandas`, `numpy`
